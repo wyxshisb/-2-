@@ -1,0 +1,17 @@
+{
+    "name": "qzone-backup-site",
+    "version": "1.0.0",
+    "private": true,
+    "description": "QQ 空间静态备份站点改造版（基于 ShunCai/QZoneExport 生成结果）",
+    "scripts": {
+        "serve": "npx http-server -p 8000 -c-1",
+        "lint": "eslint \"Common/js/**/*.js\" \"*/js/**/*.js\"",
+        "lint:fix": "eslint \"Common/js/**/*.js\" \"*/js/**/*.js\" --fix",
+        "format": "prettier --write \"**/*.{js,css,html}\" --ignore-path .gitignore"
+    },
+    "devDependencies": {
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "prettier": "^3.2.5"
+    }
+}

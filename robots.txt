@@ -1,0 +1,35 @@
+# QQ 空间备份站点 - 隐私保护
+# 禁止搜索引擎索引含他人隐私的模块目录
+
+User-agent: *
+Disallow: /Messages/
+Disallow: /Boards/
+Disallow: /Blogs/
+Disallow: /Diaries/
+Disallow: /Albums/
+Disallow: /Videos/
+Disallow: /Shares/
+Disallow: /Favorites/
+Disallow: /Friends/
+Disallow: /Visitors/
+Disallow: /Statistics/
+Disallow: /Common/json/
+
+# 允许首页与文档
+Allow: /$
+Allow: /docs/
+
+# 明确禁止 AI 训练爬虫
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+Sitemap: /docs/index.html
