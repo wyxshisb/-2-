@@ -1554,6 +1554,7 @@ blockquote.source {
 /* 平板及以下：左侧目录改为可隐藏抽屉 */
 @media (max-width: 991.98px) {
     #BlogAnchor {
+        display: block !important;
         position: fixed !important;
         left: -260px;
         top: 56px;
